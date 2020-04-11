@@ -20,7 +20,7 @@ function isInStock(book) {
     }
 
 function getTotalOrderPrice(price, quantity) {
-        return (price * quantity) + [(price * 0.2) * quantity];
+        return (price * quantity) + ((price * 0.2) * quantity);
     }
 
 module.exports = {

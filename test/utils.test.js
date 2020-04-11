@@ -57,19 +57,15 @@ test("returns true if the title is in stock", () => {
 });
 
 describe("utils.getTotalOrderPrice", () => {
-  test("returns 60 when passed 2", () => {
-    expect(utils.getTotalOrderPrice(2)).toBe(60);
+  test("returns 43.2 when passed 2", () => {
+    expect(utils.getTotalOrderPrice(2)).toBe(43.2);
   });
-});
 
 test("returns 43.2 when passed 18", () => {
   expect(utils.getTotalOrderPrice(18)).toBe(43.2);
 });
 
-test("returns 43.2 when passed 2", () => {
-  expect(utils.getTotalOrderPrice(2)).toBe(43.2);
+test("returns 43.2 when passed 18 and 2", () => {
+  expect(utils.getTotalOrderPrice(18,2)).toBe(43.2);
 });
-
-test("returns 43.2 when passed 36", () => {
-  expect(utils.getTotalOrderPrice(36)).toBe(43.2);
 });
